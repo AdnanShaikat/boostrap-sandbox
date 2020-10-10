@@ -90,40 +90,40 @@
         <!-- FORM -->
         <form>
             <!-- TEXT FIELD GROUPS -->
-            <div>
+            <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter name">
+                <input type="text" class="form-control" id="name" placeholder="Enter name">
             </div>
-            <div>
+            <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" id="email" placeholder="Enter email">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
             </div>
-            <div>
+            <div class="form-group">
                 <label for="company">Company</label>
-                <input type="text" id="company" placeholder="Enter company name">
+                <input type="text" class="form-control" id="company" placeholder="Enter company name">
             </div>
-            <div>
+            <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password">
+                <input type="password" class="form-control" id="password" placeholder="Password">
             </div>
             <!-- SELECT -->
-            <div>
+            <div class="form-group">
                 <label for="gender">Gender</label>
-                <select id="gender">
+                <select id="gender" class="form-control">
                     <option>Male</option>
                     <option>Female</option>
                 </select>
             </div>
             <!-- TEXTAREA -->
-            <div>
+            <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" rows="3"></textarea>
+                <textarea id="message" class="form-control" rows="3"></textarea>
             </div>
             <!-- FILE INPUT -->
-            <div>
+            <div class="form-group">
                 <label for="file">File input</label>
-                <input type="file" id="file">
-                <small id="fileHelp">Max 3mb size</small>
+                <input type="file" id="file" class="form-control" aria-describedby="filehelp">
+                <small id="fileHelp" class="form-text text-muted">Max 3mb size</small>
             </div>
             <!-- CUSTOM FILE INPUT -->
             <div>
@@ -135,28 +135,28 @@
             <!-- RANGE -->
             <div>
                 <label for="membership">Membership Level</label>
-                <input type="range">
+                <input type="range" class="form-control-range" id="form-control-range">
             </div>
 
             <br>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn">Submit</button>
         </form>
 
         <br>
         <br>
 
         <!-- INLINE FORM -->
-        <form>
-            <input type="text" id="username" placeholder="Enter username">
-            <input type="text" id="password" placeholder="Password">
-            <div>
-                <label>
-                    <input type="checkbox"> Remember me
+        <form class="form-inline">
+            <input type="text" class="form-control mb-2 mr-sm-2" id="username" placeholder="Enter username">
+            <input type="text" class="form-control mb-2 mr-sm-2" id="password" placeholder="Password">
+            <div class="form-check mb-2 mr-sm-2">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input"> Remember me
                 </label>
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-primary mb-2 mr-sm-2">Submit</button>
         </form>
 
         <br>
@@ -164,11 +164,11 @@
 
         <!-- FORM ROW -->
         <form>
-            <div>
-                <div>
+            <div class="form-row">
+                <div class="col">
                     <input type="text" placeholder="First name">
                 </div>
-                <div>
+                <div class="col">
                     <input type="text" placeholder="Last name">
                 </div>
             </div>
